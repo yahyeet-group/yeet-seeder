@@ -32,7 +32,7 @@ const games = [
 
 (async function() {
   admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
+    credential: admin.credential.cert(serviceAccount as admin.ServiceAccount),
     databaseURL: "https://boardbook-33f26.firebaseio.com"
   });
 
